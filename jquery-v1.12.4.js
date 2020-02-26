@@ -8,6 +8,7 @@
  * Copyright jQuery Foundation and other contributors
  * Released under the MIT license
  * http://jquery.org/license
+ *  * uploaded on netlify by miraj
  *
  * Date: 2016-05-20T17:17Z
  */

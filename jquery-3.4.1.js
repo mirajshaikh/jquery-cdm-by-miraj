@@ -10,6 +10,7 @@
  * https://jquery.org/license
  *
  * Date: 2019-05-01T21:04Z
+ * uploaded on netlify by miraj
  */
 ( function( global, factory ) {
 

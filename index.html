@@ -8,5 +8,26 @@
 <body>
     <h1>Jquery CDN </h1>
     <p>This is the yet another Jquery CDN Please find the link below </p>
+    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.js</code></pre>
+    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.min.js</code></pre>
+    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-v1.12.4.js</code></pre>
+    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-ui-v1.12.1.js</code></pre>
+
+    <script>
+        function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.text);
+}
+    </script>
 </body>
 </html>
