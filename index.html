@@ -1,17 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery cdn By Miraj</title>
 </head>
+
 <body>
     <h1>Jquery CDN </h1>
     <p>This is the yet another Jquery CDN Please find the link below </p>
-    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.js</code></pre>
-    <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.min.js</code></pre>
+    <code class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.js</code> <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy Script</button>
+    <pre><code title="Click To Copy" class="language-javascript">https://jquery-cdn.netlify.com/jquery-3.4.1.min.js</code></pre>
     <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-v1.12.4.js</code></pre>
     <pre><code class="language-javascript">https://jquery-cdn.netlify.com/jquery-ui-v1.12.1.js</code></pre>
+    <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy Script</button>
+    </div>
+    <input id="myInput" type="script "
+        value='<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>' />
+    <style>
+
+        #myInput{
+            display: none;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -75px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copied");
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
 
 </body>
+
 </html>
